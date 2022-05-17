@@ -1,12 +1,16 @@
 //Ejmeplo POO
 
 class Rectangulo {
-  base = 0;
-  altura = 0;
+  // base = 0;
+  // altura = 0;
 
-  constructor() {
+  constructor(base,altura) {
+    this.base=base;
+    this.altura=altura;
+    // this.area()
     console.log('desde el metodo constructor');
   }
+  //Metodos 
   area() {
     return this.base * this.altura;
   }
@@ -15,9 +19,12 @@ class Rectangulo {
   }
 }
 
-let rectanguloUno = new Rectangulo();
-rectanguloUno.altura = 5;
-rectanguloUno.base = 5;
+let rectanguloUno = new Rectangulo(5,5);
+// rectanguloUno.altura = 5;
+// rectanguloUno.base = 5;
 
-console.log(rectanguloUno.area());
-console.log(rectanguloUno.perimetro());
+ console.log(rectanguloUno.area());
+ console.log(rectanguloUno.perimetro());
+///DOM
+
+document.getElementById("respuesta").innerHTML = rectanguloUno.area();
