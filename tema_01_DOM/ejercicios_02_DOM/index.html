@@ -18,16 +18,22 @@
 <body>
     <div class="container">
         <div class="buttons-container">
-            <button type="button" class="btn btn-primary">Botón 1</button>
-            <button type="button" class="btn btn-secondary">Botón 2</button>
-            <button type="button" class="btn btn-success">Botón 3</button>
+            <button onclick="eventoOne()"  type="button" class="btn btn-primary">Botón 1</button>
+            <button onclick="eventoTwo()" type="button" class="btn btn-secondary">Botón 2</button>
+            <button onclick="eventoThree()" type="button" class="btn btn-success">Botón 3</button>
         </div>
         <div class="buttons-areas">
-            <div class="div divOne">Acción del botón 1</div>
-            <div class="div divTwo">Acción del botón 2</div>
-            <div class="div divThree">Acción del botón 3</div>
+            <div  id="divOne" class="div divOne">Acción del botón 1</div>
+            <div  id="divTwo" class="div divTwo">Acción del botón 2</div>
+            <div  id="divThree" class="div divThree">Acción del botón 3</div>
         </div>
     </div>
+    <script src="./app.js"></script>
 </body>
 
 </html>
+<!-- 1. Agregar un div y 3 botones al HTML y cada botón tendrá un evento que realizará
+lo siguiente:
+● El primero cambiará el fondo del div a color rojo.
+● El segundo le cambiará el tamaño al div.
+● El tercero le asignará un borde al div. -->
