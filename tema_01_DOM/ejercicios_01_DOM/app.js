@@ -6,7 +6,7 @@ const agregar1 = () => {
 
 const agregar2 = () => {
   let text = document.createElement("p");
-  text.innerText = "Accion del Boton 2";
+  text.innerHTML = "Accion del Boton 2";
   document.querySelector(".btnTwo").appendChild(text);
 
 };
