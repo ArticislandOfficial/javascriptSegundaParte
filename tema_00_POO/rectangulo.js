@@ -2,9 +2,9 @@ console.log('Ejemplo de POO');
 //Nombre de las clases inician Mayusculas
 class Rectangulo{
 
-    base = 0;
-    altura = 0;
-    //Metodo default constuctor
+    // base = 0;
+    // altura = 0;
+    //Metodo default constuctor este aunque no lo pongas viene implicito
     constructor(pbase, paltura) {
         this.base = pbase;
         this.altura = paltura;
