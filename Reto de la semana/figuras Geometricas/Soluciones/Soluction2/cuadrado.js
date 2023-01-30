@@ -1,6 +1,6 @@
 class Cuadrado {
     constructor(lado) {
-        this.lado = lado
+        this.lado = lado 
     }
     area() {
         return this.lado * 2;
